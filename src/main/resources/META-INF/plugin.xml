@@ -1,0 +1,24 @@
+<idea-plugin>
+    <id>com.wonderingwall.shellcommand</id>
+    <name>ShellCommand</name>
+    <vendor email="wearecisco@gmail.com" url="http://github.com/davdizou">DavidZou</vendor>
+
+    <description><![CDATA[
+    Enter short description for your plugin here.<br>
+    <em>most HTML tags may be used</em>
+    ]]></description>
+
+    <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+         on how to target different products -->
+    <depends>com.intellij.modules.platform</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <!-- Add your extensions here -->
+        <moduleType id="SHELL_COMMAND" implementationClass="com.wonderingwall.plugin.shellcommand.ShellCommandModuleType"/>
+        <moduleBuilder builderClass="com.wonderingwall.plugin.shellcommand.ShellCommandModuleBuilder" id="SHELL_COMMAND" order="first"/>
+    </extensions>
+
+    <actions>
+        <!-- Add your actions here -->
+    </actions>
+</idea-plugin>
